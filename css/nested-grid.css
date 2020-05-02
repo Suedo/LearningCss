@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  /* grid: repeat(2, 1fr) / repeat(3, 1fr); */
+  grid: repeat(2, 1fr) / repeat(3, 1fr);
+
+  grid-gap: 10px;
+  border: 10px solid yellow;
+}
+
+.itm {
+  border: 2px solid royalblue;
+}
+
+.itm img {
+  width: 100%;
+}
+
+.sub-grid {
+  display: grid;
+  grid: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 10px;
+}

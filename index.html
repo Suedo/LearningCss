@@ -8,7 +8,8 @@
     <!-- <link rel="stylesheet" href="css/grid-fr.css" /> -->
     <!-- <link rel="stylesheet" href="css/grid-justify.css" /> -->
     <!-- <link rel="stylesheet" href="css/grid-auto.css" /> -->
-    <link rel="stylesheet" href="css/grid-overlap.css" />
+    <!-- <link rel="stylesheet" href="css/grid-overlap.css" /> -->
+    <link rel="stylesheet" href="css/nested-grid.css" />
     <!-- Remove this line for offline development: -->
     <link
       href="https://fonts.googleapis.com/css?family=Ubuntu:300"
@@ -19,15 +20,17 @@
     <h2>Ultimate CSS Grid Course</h2>
     <p>This is the template you can use to follow along the course.</p>
     <div class="grid">
-      <div class="itm">item 1</div>
-      <div class="itm">item 2</div>
-      <div class="itm">item 3</div>
-      <div class="itm">item 4</div>
-      <div class="itm">item 5</div>
-      <!-- <div class="itm">item 6</div>
-      <div class="itm">item 7</div>
-      <div class="itm">item 8</div>
-      <div class="itm">item 9</div> -->
+      <div class="itm"><img src="img/squirrel.jpg" /></div>
+      <div class="itm"><img src="img/squirrel.jpg" /></div>
+      <div class="itm"><img src="img/squirrel.jpg" /></div>
+      <div class="itm"><img src="img/squirrel.jpg" /></div>
+      <div class="itm sub-grid">
+        <img src="img/squirrel.jpg" />
+        <img src="img/squirrel.jpg" />
+        <img src="img/squirrel.jpg" />
+        <img src="img/squirrel.jpg" />
+      </div>
+      <div class="itm"><img src="img/squirrel.jpg" /></div>
     </div>
   </body>
 </html>
