@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  /* grid-template: 100px 100px 100px/ 200px auto 150px; */
+  grid-template: repeat(2) / repeat(4);
+  grid-template-areas:
+    "E E A"
+    "B C A"
+    "F D A";
+
+  grid-gap: 10px 10px; /* row column */
+}
+
+.grid :nth-child(1) {
+  grid-area: A;
+}
+.grid :nth-child(2) {
+  grid-area: B;
+}
+.grid :nth-child(3) {
+  grid-area: C;
+}
+.grid :nth-child(4) {
+  grid-area: D;
+}
+.grid :nth-child(5) {
+  grid-area: E;
+}
+.grid :nth-child(6) {
+  grid-area: F;
+}
