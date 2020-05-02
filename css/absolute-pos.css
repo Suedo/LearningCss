@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid: repeat(2, 200px) / repeat(4, 1fr);
+  grid-gap: 10px;
+  border: 10px solid yellow;
+
+  /* The absolute position of the highlighter will be relative to position of the grid */
+  position: relative;
+}
+
+.itm {
+  border: 2px solid royalblue;
+}
+
+.highlighter {
+  position: absolute;
+  grid-row: 2;
+  grid-column: 2 / span 2;
+
+  /* The height and width % values are based on the grid-row/column span stuff above */
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background-color: rgba(0, 0, 70, 0.3);
+
+  /* Now, offset slightly to center */
+  top: -5px;
+  left: -5px;
+}
