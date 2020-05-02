@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid: repeat(2, 200px) / repeat(3, 1fr);
+  grid-gap: 10px;
+  border: 10px solid yellow;
+
+  /* height: 600px; */
+}
+
+.grid div:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  background-color: rgba(0, 0, 70, 0.7);
+  /* Since item2, i.e. div:child(2) comes AFTER child(1), this one,
+  we need to manually set z-index of this div to bring it above */
+  z-index: 1;
+}
+
+.grid div:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  background-color: rgba(70, 0, 0, 0.7);
+}
+
+.itm {
+  border: 2px solid royalblue;
+}
