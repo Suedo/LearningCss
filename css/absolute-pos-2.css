@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid: repeat(2, 300px) / repeat(2, 1fr);
+  grid-gap: 10px;
+  border: 10px solid yellow;
+}
+
+.itm {
+  border: 2px solid royalblue;
+  display: grid;
+
+  /* center the spans inside */
+  justify-content: center;
+  align-items: center;
+
+  /* The absolute position of the highlighter will be relative to position of the grid */
+  position: relative;
+}
+
+.tl {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.tr {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.bl {
+  position: absolute;
+  bottom: 0px;
+}
+
+.br {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
