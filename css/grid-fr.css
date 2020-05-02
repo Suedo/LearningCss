@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  /* grid-template: 200px 1fr 1fr 300px / 20% 1fr 1fr; */
+  grid-template: 200px 1fr 1fr 300px / repeat(3, 1fr); /* using repeat, but all of same width */
+
+  /* columns: as many as possible, min width 100px, max width 200px. Empty spaces (if any) will remain */
+  /* grid-template: 200px 1fr 1fr 300px / repeat(auto-fill, minmax(100px, 200px));  */
+
+  /* empty cells will be squashed, freed up space will be shared between columns */
+  /* grid-template: repeat(3, 1fr) / repeat(auto-fit, 100px);  */
+
+  grid-gap: 10px 10px; /* row column */
+}

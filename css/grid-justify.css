@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template: 100px 100px 100px / 200px 200px 200px;
+  grid-gap: 10px 10px;
+  border: 10px solid yellow;
+
+  /* this is for the items inside the cells of the grid, 
+    how they will be positioned wrt cell boundaries
+    justify: takes care of horizontal position
+    align: takes care of vertical position;
+  */
+  align-items: start;
+  justify-items: start;
+
+  /* this is for the cells of the grid themselves. 
+    How they will be positioned given the total area of the grid
+    if the items put in the grid do not take up the space naturally, using these settings
+    one can justify and align the contents properly
+  */
+  justify-content: space-between;
+  align-content: end;
+
+  /* giving this height to see 'align-content' in action */
+  height: 600px;
+}
+
+/* Override grid defults for specific grid cells */
+.grid div:nth-child(2) {
+  justify-self: stretch;
+}
+
+.grid div:nth-child(4) {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.grid div:nth-child(6) {
+  justify-self: end;
+  align-self: end;
+}
+
+.itm {
+  border: 2px solid royalblue;
+}
