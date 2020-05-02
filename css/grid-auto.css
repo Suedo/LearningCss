@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  /* giving both row and column as 'auto-flow' causes weird stuff to happen */
+  grid: 1fr 1fr / auto-flow 1fr; /* row / column */
+  grid-auto-flow: column;
+  /* dense reorders divs to make best possible use of space. Good for Image gallery etc, bad for forms etc */
+  /* grid-auto-flow: column dense; */
+
+  /* 
+    grid-auto-flow: [row/column] based on where in `grid` you have given 'auto-flow'
+    As such, in above, flow is set to column, and in below commented out part, it's set to row
+  */
+  /* grid: auto-flow 1fr / 1fr 1fr 1fr;
+  grid-auto-flow: row;  */
+
+  grid-gap: 10px;
+  border: 10px solid yellow;
+
+  /* Without this height, grid will take the minimum height just enough to accomodate the elements 
+    inside the grid, ie, their margin padding etc */
+  height: 600px;
+}
+
+.grid div:nth-child(2) {
+  grid-row: 1 / span 2;
+}
+.itm {
+  border: 2px solid royalblue;
+}
